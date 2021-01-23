@@ -28,7 +28,7 @@ const request = require("http-fast-request");
 
 async function () {
     try {
-        const response = await request.get(url, options);
+        const response = await request.get(url = "", options = {});
         // Response: { headers: {}, body: {}, statusCode: number }
         return response.body;
     } catch (error) {
@@ -46,7 +46,7 @@ const request = require("http-fast-request");
 
 async function () {
     try {
-        const response = await request.post(url, body, options);
+        const response = await request.post(url = "", body = "{}", options = {});
         // Response: { headers: {}, body: {}, statusCode: number }
         return response.body;
     } catch (error) {
@@ -64,7 +64,7 @@ const request = require("http-fast-request");
 
 async function () {
     try {
-        const response = await request.patch(url, body, options);
+        const response = await request.patch(url = "", body = "{}", options = {});
         // Response: { headers: {}, body: {}, statusCode: number }
         return response.body;
     } catch (error) {
@@ -82,7 +82,7 @@ const request = require("http-fast-request");
 
 async function () {
     try {
-        const response = await request.put(url, body, options);
+        const response = await request.put(url = "", body = "{}", options = {});
         // Response: { headers: {}, body: {}, statusCode: number }
         return response.body;
     } catch (error) {
@@ -100,7 +100,7 @@ const request = require("http-fast-request");
 
 async function () {
     try {
-        const response = await request.delete(url, options);
+        const response = await request.delete(url = "", options = {});
         // Response: { headers: {}, body: {}, statusCode: number }
         return response.body;
     } catch (error) {
