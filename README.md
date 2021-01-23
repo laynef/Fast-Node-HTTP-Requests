@@ -130,6 +130,42 @@ This is an example of how to list things you need to use the software and how to
 - Body: Must be string. Use `JSON.stringify` for any objects used.
 - Options: Must be an object. [Check Node.js request options](https://nodejs.org/dist/latest-v14.x/docs/api/http.html#http_http_request_options_callback)
 
+### Methods
+
+- GET:
+
+```
+request.get(url: string, options = {})
+```
+
+
+- POST:
+
+```
+request.post(url: string, body: string, options = {});
+```
+
+
+- PATCH:
+
+```
+request.patch(url: string, body: string, options = {});
+```
+
+
+- PUT:
+
+```
+request.put(url: string, body: string, options = {});
+```
+
+
+- DELETE:
+
+```
+request.delete(url: string, options = {});
+```
+
 ### Examples
 
 - GET:
