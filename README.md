@@ -19,6 +19,14 @@
 
 ### Methods
 
+#### Parameters:
+
+- Url: string
+- Body: Must be string. Use `JSON.stringify` for any objects used.
+- Options: Must be an object. [Check Node.js request options](https://nodejs.org/dist/latest-v14.x/docs/api/http.html#http_http_request_options_callback)
+
+#### Examples
+
 - GET:
 
 ```
