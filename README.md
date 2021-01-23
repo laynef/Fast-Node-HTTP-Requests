@@ -1,5 +1,100 @@
 <div style="display: inline-flex; flex-direction: column; align-items: center; width: 100%">
-    <img src="./docs/nodejs.png" width="500px" style="margin: 1.5rem;">
+    <img src="https://nodejs.org/static/images/logo.svg" width="500px" style="margin: 1.5rem;">
     <h1 style="text-align: center;">Node: Fast HTTP Request</h1>
-    <p></p>
+    <h2>Promise based HTTP request library for Node.js. Faster than Axios.</h2>
 </div>
+
+### Installation
+
+`npm install -S fast-http-request`
+
+### Methods
+
+- GET:
+
+```
+const request = require("http-fast-request");
+
+async function () {
+    try {
+        const response = await request.get(url, options);
+        // Response: { headers: {}, body: {}, statusCode: number }
+        return response.body;
+    } catch (error) {
+        // Error Response: { headers: {}, body: {}, statusCode: number }
+        return error;
+    }
+}
+```
+
+
+- POST:
+
+```
+const request = require("http-fast-request");
+
+async function () {
+    try {
+        const response = await request.post(url, body, options);
+        // Response: { headers: {}, body: {}, statusCode: number }
+        return response.body;
+    } catch (error) {
+        // Error Response: { headers: {}, body: {}, statusCode: number }
+        return error;
+    }
+}
+```
+
+
+- PATCH:
+
+```
+const request = require("http-fast-request");
+
+async function () {
+    try {
+        const response = await request.patch(url, body, options);
+        // Response: { headers: {}, body: {}, statusCode: number }
+        return response.body;
+    } catch (error) {
+        // Error Response: { headers: {}, body: {}, statusCode: number }
+        return error;
+    }
+}
+```
+
+
+- PUT:
+
+```
+const request = require("http-fast-request");
+
+async function () {
+    try {
+        const response = await request.put(url, body, options);
+        // Response: { headers: {}, body: {}, statusCode: number }
+        return response.body;
+    } catch (error) {
+        // Error Response: { headers: {}, body: {}, statusCode: number }
+        return error;
+    }
+}
+```
+
+
+- DELETE:
+
+```
+const request = require("http-fast-request");
+
+async function () {
+    try {
+        const response = await request.delete(url, options);
+        // Response: { headers: {}, body: {}, statusCode: number }
+        return response.body;
+    } catch (error) {
+        // Error Response: { headers: {}, body: {}, statusCode: number }
+        return error;
+    }
+}
+```
