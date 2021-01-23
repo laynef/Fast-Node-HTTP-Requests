@@ -1,3 +1,12 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+</style>
+
 <div style="display: flex !important; flex-direction: column !important; align-items: center !important; width: 100%">
     <img src="https://www.hostingadvice.com/wp-content/uploads/2018/09/node-js-logo.jpg" style="width: 100% !important; margin: 1.5rem;">
     <h1 style="text-align: center !important;">Node: Fast HTTP Request</h1>
