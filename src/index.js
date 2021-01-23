@@ -1,5 +1,4 @@
-const httpRequest = require("./http");
-const httpsRequest = require("./https");
+const request = require("request");
 
 
-module.exports = { httpRequest, httpsRequest };
+module.exports = { request };

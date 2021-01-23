@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
+    "follow-redirects": "^1.13.1",
     "mocha": "^8.2.1"
   }
 }
