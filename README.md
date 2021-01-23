@@ -1,5 +1,5 @@
 <div style="display: inline-flex; flex-direction: column; align-items: center; width: 100%">
-    <img src="https://nodejs.org/static/images/logo.svg" width="500px" style="margin: 1.5rem;">
+    <img src="https://nodejs.org/static/images/logo.svg" width="500px" style="margin: 1.5rem; background-color: #333333;">
     <h1 style="text-align: center;">Node: Fast HTTP Request</h1>
     <h2>Promise based HTTP request library for Node.js. Faster than Axios.</h2>
 </div>
