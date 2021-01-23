@@ -14,7 +14,6 @@ const getUrlMetaData = (url) => {
 const request = (options, data) => {
   return new Promise((resolve, reject) => {
     options.maxRedirects = 20;
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
     const protocol = options.protocol;
     delete options.protocol;
