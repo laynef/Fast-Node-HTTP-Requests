@@ -166,6 +166,19 @@ request.put(url: string, body: string, options = {});
 request.delete(url: string, options = {});
 ```
 
+### Responses
+
+- Succesful Returns
+```
+{ headers: {}, body: {}, statusCode: number }
+```
+
+
+- Error Returns
+```
+{ headers: {}, body: {}, statusCode: number }
+```
+
 ### Examples
 
 - GET:
