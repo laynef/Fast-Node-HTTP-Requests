@@ -1,4 +1,4 @@
-import { https, http } from "follow-redirects";
+const { https, http } = require("follow-redirects");
 
 
 const getUrlMetaData = (url) => {
@@ -62,7 +62,7 @@ const request = (options, data) => {
   });
 };
 
-export default {
+module.exports = {
   get: (url, options) => 
     request({ ...getUrlMetaData(url), method: "GET", ...options }),
 
