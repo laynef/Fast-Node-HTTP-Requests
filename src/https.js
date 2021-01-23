@@ -16,7 +16,7 @@ const sendResponse = (options, data) => new Promise((resolve, reject) => {
         res.on("end", () => {
             try {
                 const string = Buffer.concat(chunks).toString();
-                const response = options && options.headers && options.headers["Content-Type"] === "application/json" ? JSON.parse(string) : string;
+                const response = res.headers["content-type"].match(new RegExp("application/json")) ? JSON.parse(string) : string;
                 if (res.statusCode >= 200 && res.statusCode < 400) {
                     resolve(response);
                 } else {
