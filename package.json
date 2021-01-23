@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Layne Faler <laynefaler@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "follow-redirects": "^1.13.1"
   },
