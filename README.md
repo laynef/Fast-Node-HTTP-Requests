@@ -1,6 +1,6 @@
-<div style="display: inline-flex; flex-direction: column; align-items: center; width: 100%">
-    <img src="https://www.hostingadvice.com/wp-content/uploads/2018/09/node-js-logo.jpg" width="500px" style="margin: 1.5rem;">
-    <h1 style="text-align: center;">Node: Fast HTTP Request</h1>
+<div style="display: inline-flex !important; flex-direction: column !important; align-items: center !important; width: 100%">
+    <img src="https://www.hostingadvice.com/wp-content/uploads/2018/09/node-js-logo.jpg" style="width: 100%; margin: 1.5rem;">
+    <h1 style="text-align: center !important;">Node: Fast HTTP Request</h1>
     <h2>Promise based HTTP request library for Node.js. Faster than Axios.</h2>
 </div>
 
