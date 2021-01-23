@@ -2,16 +2,12 @@
   "name": "http-requests",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha ./tests/**/*.js"
-  },
+  "main": "src/index.js",
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.2.0",
-    "follow-redirects": "^1.13.1",
-    "mocha": "^8.2.1"
+    "follow-redirects": "^1.13.1"
   }
 }
