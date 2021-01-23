@@ -16,20 +16,20 @@ const sendResponse = (options, data) => new Promise((resolve, reject) => {
         res.on("end", () => {
             try {
                 const string = Buffer.concat(chunks).toString();
-                const response = res.headers["content-type"].match(new RegExp("application/json")) ? JSON.parse(string) : string;
+                const body = res.headers["content-type"].match(new RegExp("application/json")) ? JSON.parse(string) : string;
                 if (res.statusCode >= 200 && res.statusCode < 400) {
-                    resolve(response);
+                    resolve({ statusCode: res.statusCode, body });
                 } else {
-                    reject(response);
+                    reject({ statusCode: res.statusCode, body });
                 }
             } catch (err) {
-                reject(err);
+                reject({ statusCode: 500, body: err });
             }
         });
     });
 
     req.on("error", (error) => {
-        reject(error);
+        reject({ statusCode: 500, body: error });
     });
 
     if (data) {
@@ -41,8 +41,8 @@ const sendResponse = (options, data) => new Promise((resolve, reject) => {
 
 module.exports = {
     get: (url, options) => sendResponse({ ...getUrlMetaData(url), method: 'GET', ...options }),
-    post: (url, data, options) => sendResponse({ ...getUrlMetaData(url), method: 'POST', ...options }),
-    patch: (url, data, options) => sendResponse({ ...getUrlMetaData(url), method: 'PATCH', ...options }),
-    put: (url, data, options) => sendResponse({ ...getUrlMetaData(url), method: 'PUT', ...options }),
+    post: (url, data, options) => sendResponse({ ...getUrlMetaData(url), method: 'POST', ...options }, data),
+    patch: (url, data, options) => sendResponse({ ...getUrlMetaData(url), method: 'PATCH', ...options }, data),
+    put: (url, data, options) => sendResponse({ ...getUrlMetaData(url), method: 'PUT', ...options }, data),
     delete: (url, options) => sendResponse({ ...getUrlMetaData(url), method: 'DELETE', ...options }),
 }
