@@ -315,14 +315,14 @@ Project Link: [https://github.com/laynef/Fast-Node-HTTP-Requests](https://github
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-url]: https://linkedin.com/in/laynefaler
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/laynef/Fast-Node-HTTP-Requests.svg?style=for-the-badge
 [contributors-url]: https://github.com/laynef/Fast-Node-HTTP-Requests/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/laynef/Fast-Node-HTTP-Requests.svg?style=for-the-badge
 [forks-url]: https://github.com/laynef/Fast-Node-HTTP-Requests/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/laynef/Fast-Node-HTTP-Requests.svg?style=for-the-badge
 [stars-url]: https://github.com/laynef/Fast-Node-HTTP-Requests/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/laynef/Fast-Node-HTTP-Requests.svg?style=for-the-badge
 [issues-url]: https://github.com/laynef/Fast-Node-HTTP-Requests/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/laynef/Fast-Node-HTTP-Requests.svg?style=for-the-badge
 [license-url]: https://github.com/laynef/Fast-Node-HTTP-Requests/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
