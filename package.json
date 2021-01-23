@@ -3,11 +3,20 @@
   "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "follow-redirects": "^1.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
   }
 }
