@@ -3,7 +3,6 @@ const { getUrlMetaData } = require('./utils');
 
 const sendResponse = (options, data) => new Promise((resolve, reject) => {
     const req = http.request(options, (res) => {
-        console.log(res)
         const chunks = [];
 
         res.on("data", (chunk) => {
